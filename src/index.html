@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Простой список задач на каждый день">
+  <title>Мои задачи</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div>
+        <p class="eyebrow">ПЛАНИРОВЩИК</p>
+        <h1>Мои задачи</h1>
+        <p class="subtitle">Небольшие шаги приводят к большим результатам.</p>
+      </div>
+      <div class="date" id="today"></div>
+    </header>
+
+    <section class="composer" aria-label="Добавить задачу">
+      <form id="task-form">
+        <label class="sr-only" for="task-input">Новая задача</label>
+        <input id="task-input" type="text" maxlength="120"
+               placeholder="Что нужно сделать?" autocomplete="off" required>
+        <button type="submit">Добавить</button>
+      </form>
+    </section>
+
+    <section class="summary" aria-live="polite">
+      <span id="task-count">Всего: 0</span>
+      <span id="done-count">Выполнено: 0</span>
+    </section>
+
+    <section class="tasks-section">
+      <ul id="task-list" class="task-list"></ul>
+      <div id="empty-state" class="empty-state">
+        <div class="empty-icon">✓</div>
+        <h2>Пока задач нет</h2>
+        <p>Добавьте первую задачу — и начнём!</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <button id="clear-done" class="text-button" type="button">Удалить выполненные</button>
+      <span>Данные сохраняются в этом браузере</span>
+    </footer>
+  </main>
+</body>
+</html>
