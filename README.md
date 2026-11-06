@@ -63,3 +63,6 @@ git push -u origin feature/filters
 ```
 
 РЎРѕР·РґР°Р№С‚Рµ Pull Request РЅР° GitHub РёР· `feature/filters` РІ `main` Рё РІС‹РїРѕР»РЅРёС‚Рµ Merge.
+
+## Обновление проекта
+Добавлен этап разработки через feature-ветку и Pull Request.
